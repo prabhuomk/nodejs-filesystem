@@ -18,14 +18,14 @@ let filename = fn.getDate() + "-" + (fn.getMonth() + 1) + "-" + fn.getFullYear()
 
 //creating directory
 function directory(){
-var dir = './myfiles';
-if (!fs.existsSync(dir)){
-    fs.mkdirSync(dir);
-}
-return dir;
-}
- directory();
-
+  var dir = './myfiles';
+  if (!fs.existsSync(dir)){
+      fs.mkdirSync(dir);
+  }
+  return dir;
+  }
+   directory();
+  
 // creating new file in mylifes directory
 
 app.get("/createNewFile", async (request, response) => {
