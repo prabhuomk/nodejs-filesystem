@@ -16,6 +16,14 @@ let fn = new Date();
 let filename = fn.getDate() + "-" + (fn.getMonth() + 1) + "-" + fn.getFullYear() +
    "-" + fn.getHours() + "-" + fn.getMinutes() + "-" + fn.getSeconds() + ".txt";
 
+
+
+   app.get("/", (request, response) => {
+    response.send(
+      "<h1>FileSystem with timestamp<h1>"
+    );
+  });
+
 //creating directory
 function directory(){
   var dir = './myfiles';
